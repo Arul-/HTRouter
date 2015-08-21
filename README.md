@@ -35,6 +35,11 @@ The software is packaged as a PHAR file, which can be build by:
 
  3. You may now revert `phar.readonly` in your `php.ini`
 
+> **Note:-** instead of altering your php.ini, you can turn off phar.readonly at the command line using the following
+> ```
+> php -d phar.readonly=off HTRouter/phar/buildphar.php
+> ```
+
 Usage
 
  * $ php -S 0.0.0.0:80 -t /var/www htrouter.phar
